@@ -13,8 +13,8 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: "Instrument Serif", serif;;
-    
+    font-family: "Instrument Serif", "serif";
+    font-weight: 200;
 }
 header{
     display: block;
@@ -53,6 +53,16 @@ h2{
     font-weight: 200;
     text-align: center;
 }
+h3{
+    font-weight: 200;
+    margin: 0;
+     font-size: 2vw;
+}
+h4{
+    font-weight: 200;
+    display: block;
+    font-size: 2vw;
+}
 p{
     text-align: left;
     margin: 2vw;
@@ -84,13 +94,8 @@ a{
 }
 
 .subTitle{
-
-    
-}
-.about{
     grid-column: 2/6;
     background-color: var(--main-color);
-    
 }
 main{
     grid-column: 2/8;
@@ -101,22 +106,42 @@ main{
     background-color: var(--main-color);
     grid-column: span 4;
     margin: 1vh;
+    display: flex;
+    
 }
 .thin{
 
     grid-column: span 2;
     margin: 1vh;
     display: flex;
-    align-items: center;
     background-color: var(--main-color);
+}
+.thin.text{
+    display: block;
+   
+}
+ul{
+    padding-left: 30px;
+    margin: 0;
+    text-align: left;
+    font-size: 1.5vw;
+    li{
+        margin-bottom:10px;
+    }
 }
 .thin img{
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
     border: 5px solid var(--main-color);
+    align-items: center;
 }
-
+.wide img{
+    max-width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    border: 5px solid var(--main-color);
+}
 nav{
     display: flex;
     background-color: var(--main-color);
