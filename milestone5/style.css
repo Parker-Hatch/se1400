@@ -12,7 +12,6 @@ body{
     color:#ffffff;
     margin: 0;
     padding: 0;
-    column-gap: 1rem;
     text-align: center;
     font-family: "Instrument Serif", serif;;
     
@@ -21,15 +20,18 @@ header{
     display: block;
     background-color: var(--main-color);
     grid-column: 1/-1;
-    border-bottom: 1rem solid var(--main-color);
-    justify-content: center;
+    border-bottom: 2rem solid var(--main-color);
     position: relative;
+    height: 600px;
+    margin-bottom: 20px;
 }
 header img{
+    object-position: 50% 80%;
     padding: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     filter: blur(1.5px);
+    object-fit: cover;
 }
 .overLay{
     position: absolute;
@@ -41,18 +43,25 @@ header img{
 
 }  
 h1{
-    font-size: 6rem;
-    margin: 2rem 0 0;
+    font-size: 15vw;
+    margin: 32px 0 0;
     font-weight: 200;
 }
 h2{
-    font-size: 2rem;
+    font-size: 5vw;
     margin: 0;
     font-weight: 200;
+    text-align: center;
+}
+p{
+    text-align: left;
+    margin: 2vw;
+    line-height: 1.5;
+    font-size: 1.5vw;
 }
 header hr{
     height: 2px;
-    width: 300px;
+    width: 50vw;
     background: #ffffff;
 }
 a{
@@ -61,22 +70,60 @@ a{
 }
 .bookStay a{
     display: inline-block;
-    margin: 30px;
+    margin: 3.5vw;
     background-color: var(--main-color);
-    padding: 10px 15px 10px;
+    padding: 13px 32px 13px;
+    font-size: 1.6em;
     border-radius: 50em;
+    scale: 100%;
+    transition: background-color,scale 0.2s ease-in-out;
+}
+.bookStay a:hover,a:focus{
+    background-color: var(--action-color);
+    scale: 110%;
+}
+
+.subTitle{
+
+    
+}
+.about{
+    grid-column: 2/6;
+    background-color: var(--main-color);
+    
+}
+main{
+    grid-column: 2/8;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+.wide{
+    background-color: var(--main-color);
+    grid-column: span 4;
+    margin: 1vh;
+}
+.thin{
+
+    grid-column: span 2;
+    margin: 1vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+}
+.thin img{
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border: 5px solid var(--main-color);
 }
 
 nav{
     display: flex;
     background-color: var(--main-color);
     grid-column: 1/-1;
-    justify-content: center;
     
 }
-main{
-    
-}
+
 footer{
     grid-column: 1/-1;
     background-color: #2e1e16;
