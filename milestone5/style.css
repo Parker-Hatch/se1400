@@ -168,7 +168,16 @@ nav a:hover,nav a:focus{
   
 }
 
-
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.contact ul{
+    text-align: center;
+    list-style-position: inside;
+}
 
 footer{
     grid-column: 1/-1;
