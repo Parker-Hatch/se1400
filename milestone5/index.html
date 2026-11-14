@@ -16,8 +16,19 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#story">History</a>
-            <a href="https://www.airbnb.com/rooms/1389498045891210302?source_impression_id=p3_1793923020_P3R16yhiI8eAhDC-"  target="_blank" rel="noopener noreferrer">Book</a>
-            <a href="">Gallery</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Book ▼</a>
+                <ul class="dropdownContent">
+                    <li><a href="https://www.airbnb.com/rooms/1389498045891210302?source_impression_id=p3_1793923020_P3R16yhiI8eAhDC-" target="_blank" rel="noopener noreferrer">Airbnb</a></li>
+                    <li><a href="YOUR_VRBO_LINK_HERE" target="_blank" rel="noopener noreferrer">Vrbo</a></li>
+                </ul>
+            </div>
+            <script>
+                document.querySelector(".dropbtn").addEventListener("click",function(){
+                    document.querySelector(".dropdownContent").classList.toggle(".dropdownShow");
+                });
+            </script>
+            <a href="#">Gallery</a>
         </nav>
         <header id = home>
             <img src="images\main1.jpg">
