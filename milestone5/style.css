@@ -256,24 +256,33 @@ footer {
     grid-column: var(--fullwidth);
     background-color: #2e1e16;
 }
-.gallory {
-    margin: 40px 15px;
-    grid-column: 2 / 8;
-    column-width: 280px; /* Automatically creates columns ~280px wide */
-    column-gap: 15px;    /* Horizontal space between columns */
+.gall{
+    display: block;
+}
+.gallery {
+    margin: 20px 15px;
+    column-count: 3; 
+    display: block;
+    column-gap: 15px;
 }
 
 .galleryimg {
-    break-inside: avoid; /* Prevents images from splitting across columns */
-    margin-bottom: 15px; /* Vertical space between stacked images */
+    break-inside: avoid;
+    margin-bottom: 15px;
+    position: relative;
 }
 
 .galleryimg img {
     width: 100%;
     height: auto;
     display: block;
-    box-sizing: border-box; /* Keeps the 5px border from overflowing the column */
+    box-sizing: border-box;
     border: 5px solid var(--main-color);
+}
+.topPage{
+    margin-top: 10px;
+    grid-column: 2/8;
+    background-color: var(--main-color);
 }
 
 
