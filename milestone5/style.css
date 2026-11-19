@@ -320,4 +320,7 @@ footer {
     .mobile{
         display: block;
     }
+    .gallery{
+        column-count: 2;
+    }
 }
